@@ -9,6 +9,11 @@ class BatteryPictogram {
  public:
   BatteryPictogram(int width, int height, int on, int off);
 
+  int Width() const { return width_; }
+  int Height() const { return height_; }
+  int X() const { return x_; }
+  int Y() const { return y_; }
+
   void locate(int x, int y);
   void draw(int x, int y, int level, Adafruit_GFX* gfx);
   void draw(int level, Adafruit_GFX* gfx);
